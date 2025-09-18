@@ -2,9 +2,33 @@ package DesafioModulo5;
 
 public class ContasAPagar {
 	private String descricao;
-	private int valor;
+	private double valor;
 	private String dataVencimento;
+	private Fornecedor fornecedor;
 	
+	
+	
+	//Fornecedor fornecedor = new Fornecedor();
+	
+	public ContasAPagar() {
+		
+	}
+	//ContasAPagar conta1 = new ContasAPagar();
+	public ContasAPagar (Fornecedor fornecedor, String descricao,  double valor, String dataVencimento) {
+		this.fornecedor = fornecedor;
+		this.descricao = descricao;
+		this.valor = valor;
+		this.dataVencimento = dataVencimento;
+		
+	}
+	
+
+	
+	public void pagar() {
+		
+	}
+	
+	//Métodos get e set
 	
 	public String getDescricao() {
 		return descricao;
@@ -14,10 +38,10 @@ public class ContasAPagar {
 	}
 	
 	
-	public int getValor() {
+	public double getValor() {
 		return valor;		
 	}
-	public void setValor(int valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 	
@@ -28,23 +52,8 @@ public class ContasAPagar {
 		this.dataVencimento = dataVencimento;
 	}
 	
-	Fornecedor fornecedor = new Fornecedor();
-	
-
-	
-	
-
-	ContasAPagar (String descricao, Fornecedor fornecedor, double valor, String dataVencimento) {
-		this.descricao = "teste";
-		//this.fornecedor;
-		this.valor = 32;
-		this.dataVencimento = "Venceu";
-		
-		
-	}
-	
-	public void pagar() {
-		
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
 	}
 	
 }

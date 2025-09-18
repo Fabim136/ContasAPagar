@@ -5,10 +5,13 @@ public class Principal {
 	public static void main(String[] args) {
 		Fornecedor imobiliaria = new Fornecedor();
 		
+		
 		imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
+		System.out.println(imobiliaria.nome);
 
 		Fornecedor mercado = new Fornecedor();
 		mercado.setNome("Mercado do João");
+		
 		
 		ContasAPagar conta1 = new ContasAPagar();
 		conta1.setDescricao("Aluguel da matriz");
@@ -23,6 +26,7 @@ public class Principal {
 		conta1.pagar();
 		conta2.pagar();
 		conta3.pagar();
+		
 
 	}
 
