@@ -5,12 +5,14 @@ public class ContasAPagar {
 	private double valor;
 	private String dataVencimento;
 	private Fornecedor fornecedor;
+	private SituacaoConta situacaoConta;
 	
 	
 	
 	//Fornecedor fornecedor = new Fornecedor();
 	
 	public ContasAPagar() {
+		situacaoConta = SituacaoConta.PENDENTE;
 		
 	}
 	//ContasAPagar conta1 = new ContasAPagar();
@@ -52,6 +54,13 @@ public class ContasAPagar {
 		this.fornecedor = fornecedor;
 	}
 	
+	public SituacaoConta getSituacaoConta() {
+		return situacaoConta;
+	}
+	
+
+	
+	
 	void pagar() {
 		System.out.println("  ");
 		System.out.println("Informações do pagamento");
@@ -60,7 +69,8 @@ public class ContasAPagar {
 		System.out.println("Data de vencimento" + this.dataVencimento);
 		System.out.println("Fornecedor" + fornecedor.getNome());
 		System.out.println("++++++++++++++++++++++++++++");
-		
 	}
+	
+	
 	
 }
