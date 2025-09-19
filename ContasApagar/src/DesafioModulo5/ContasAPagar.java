@@ -24,10 +24,6 @@ public class ContasAPagar {
 	
 
 	
-	public void pagar() {
-		
-	}
-	
 	//Métodos get e set
 	
 	public String getDescricao() {
@@ -54,6 +50,17 @@ public class ContasAPagar {
 	
 	public void setFornecedor(Fornecedor fornecedor) {
 		this.fornecedor = fornecedor;
+	}
+	
+	void pagar() {
+		System.out.println("  ");
+		System.out.println("Informações do pagamento");
+		System.out.println("Descrição" + this.descricao);
+		System.out.println("Valor: R$" + this.valor);
+		System.out.println("Data de vencimento" + this.dataVencimento);
+		System.out.println("Fornecedor" + fornecedor.getNome());
+		System.out.println("++++++++++++++++++++++++++++");
+		
 	}
 	
 }
