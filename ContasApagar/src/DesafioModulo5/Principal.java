@@ -24,7 +24,12 @@ public class Principal {
 		ContasAPagar conta3 = new ContasAPagar(mercado, "Aluguel da filial", 700d, "11/05/2012");
 		
 		conta1.pagar();
+		
+		conta2.cancelar();
 		conta2.pagar();
+		
+		
+		conta3.pagar();
 		conta3.pagar();
 		
 
