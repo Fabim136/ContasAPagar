@@ -1,9 +1,9 @@
 package DesafioModulo5;
 
-public class ContasAPagar {
-	private String descricao;
-	private double valor;
-	private String dataVencimento;
+public class ContasAPagar extends Conta {
+	//private String descricao;
+	//private double valor;
+	//private String dataVencimento;
 	private Fornecedor fornecedor;
 	private SituacaoConta situacaoConta;
 	
@@ -17,6 +17,7 @@ public class ContasAPagar {
 		
 	}
 	//ContasAPagar conta1 = new ContasAPagar();
+	/*
 	public ContasAPagar (Fornecedor fornecedor, String descricao,  double valor, String dataVencimento) {
 		this.fornecedor = fornecedor;
 		this.descricao = descricao;
@@ -24,7 +25,7 @@ public class ContasAPagar {
 		this.dataVencimento = dataVencimento;
 		
 	}
-	
+	*/
 
 	
 	//Métodos get e set

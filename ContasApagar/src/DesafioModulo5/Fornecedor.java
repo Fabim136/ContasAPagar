@@ -1,9 +1,7 @@
 package DesafioModulo5;
 
-public class Fornecedor {
-	public String nome;
-	
-	
+public class Fornecedor extends Pessoa {
+		
 	public String getNome() {
 		return nome;
 	}
