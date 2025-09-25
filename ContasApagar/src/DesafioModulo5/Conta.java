@@ -1,11 +1,11 @@
 package DesafioModulo5;
 
-public class Conta {
+public abstract class Conta {
 	String descricao;
 	String dataVencimento;
 	double valor;
-	private Fornecedor fornecedor;
-	private SituacaoConta situacaoConta;
+	protected Fornecedor fornecedor;
+	protected SituacaoConta situacaoConta;
 	
 	
 	
@@ -14,16 +14,51 @@ public class Conta {
 		this.descricao = descricao;
 		this.valor = valor;
 		this.dataVencimento = dataVencimento;
+		this.situacaoConta = SituacaoConta.PENDENTE;
 		
 	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	
+	public double getValor() {
+		return valor;		
+	}
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+	public String getDataVencimento () {
+		return dataVencimento;
+	}
+	public void setDataVencimento(String dataVencimento) { 
+		this.dataVencimento = dataVencimento;
+	}
+	
+	public Fornecedor getFornecedor() {
+		return fornecedor;
+	}
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+	
+	public SituacaoConta getSituacaoConta() {
+		return situacaoConta;
+	}
+	
 	
 	
 	public Conta() {
 		
 	}
 	
-	void cancelar() {
-		
-	}
+	public abstract void pagar();
+	
+	public abstract void cancelar();
+	
 
 }
