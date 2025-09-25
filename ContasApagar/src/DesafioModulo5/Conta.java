@@ -58,7 +58,10 @@ public abstract class Conta {
 	
 	public abstract void pagar();
 	
-	public abstract void cancelar();
+	public void cancelar() {
+		this.situacaoConta = SituacaoConta.CANCELADA;
+		System.out.println("Conta cancelada");
+	};
 	
 
 }
